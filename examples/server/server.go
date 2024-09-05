@@ -68,8 +68,8 @@ func processConnection(storage *sync.Map, conn net.Conn, wg *sync.WaitGroup) {
 					SerialId:  p.Header.SerialId,
 					Version:   p.Header.Version,
 					Timestamp: p.Header.Timestamp,
-					Source:    p.Header.Target,
-					Target:    p.Header.Source,
+					Source:    p.Header.Source,
+					Target:    p.Header.Target,
 				},
 				Action: constant.AckAction,
 			})
